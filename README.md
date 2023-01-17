@@ -1,9 +1,9 @@
 # Code Review: Team Week 2
 
-#### By ____, Alejandro Socarras, _____
+#### By Alejandro Socarras, Drew White, Phil Kendall
 
 
-####  <Description>
+####  Exploring Crime in Major US Cities
 
 <br>
 
@@ -27,23 +27,19 @@
 
 
 ## Setup/Installation Requirements
-
-* Go to https://github.com/apsocarras/team-week2.git to find the specific repository for this website.
-* Then open your terminal. I recommend going to your Desktop directory:
-    ```bash
-    cd Desktop
-    ```
-* Then clone the repository by inputting: 
+* Make a new directory for your project
+  ```bash
+  mkdir <new-directory>
+  cd <new-directory>
+  ```
+* Clone the repository by inputting: 
   ```bash
   git clone https://github.com/apsocarras/team-week2.git
-  ```
-* Go to the new directory or open the directory folder on your desktop:
-  ```bash
-  cd python-team-week2
   ```
 * Once in the directory you will need to set up a virtual environment in your terminal:
   ```bash
   python3.7 -m venv venv
+  ## Alternatively: virtualenv -p python3.7 venv
   ```
 * Then activate the environment:
   ```bash
@@ -53,8 +49,6 @@
   ```bash
     pip install -r requirements.txt
   ```
-* Download the necessary csv files listed in the Datasets Used section
-* One all csv data sets have been added to the data folder in this directory, you can open it
 * With your virtual environment now enabled with proper requirements, open the directory:
   ```bash
   code .
@@ -71,7 +65,7 @@
 
 MIT License
 
-Copyright (c) 2022 ____, Alejandro Socarras, ____
+Copyright (c) 2022 Alejandro Socarras, Drew White, Phil Kendall
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
