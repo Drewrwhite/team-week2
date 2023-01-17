@@ -18,6 +18,8 @@
 
 ## Datasets Used
 
+* https://www.kaggle.com/datasets/onlyrohit/crimes-in-chicago
+* https://www.kaggle.com/datasets/paultimothymooney/denver-crime-data
 
 </br>
 
