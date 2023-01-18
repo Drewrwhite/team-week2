@@ -68,4 +68,3 @@ sources:
           - name: cross_street
           - name: lat
           - name: lon
-      
