@@ -6,11 +6,11 @@ with src_den_crimes as (
 final as (
 
   select 
+    reported_date, 
     incident_id,
     MD5(CONCAT(CAST(offense_code AS STRING), CAST(offense_code_ext AS STRING))) as off_id_hash,
     first_occurrence, 
     last_occurrence, 
-    reported_date, 
     address,
     geo_lon as lon,
     geo_lat as lat, 
