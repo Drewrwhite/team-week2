@@ -1,0 +1,70 @@
+version: 2
+
+sources:
+  - name: los_angeles
+    description: Data on crimes in LA.
+    database: team-week2
+    schema: los_angeles
+    tables:
+      - name: LA_2010_2019
+        description: Raw LA crime data, 2010-2019.
+        columns:
+          - name: dr_no
+          - name: date_rptd
+          - name: date_occ
+          - name: time_occ
+          - name: area_id
+          - name: area_name
+          - name: rpt_dist_no
+          - name: part_1_2
+          - name: crm_cd
+          - name: crm_cd_desc
+          - name: mocodes
+          - name: vict_age
+          - name: vict_sex
+          - name: vict_descent
+          - name: premis_cd
+          - name: premis_desc
+          - name: weapon_used_cd
+          - name: weapon_desc
+          - name: status
+          - name: status_desc
+          - name: crm_cd_1
+          - name: crm_cd_2
+          - name: crm_cd_3
+          - name: crm_cd_4
+          - name: location
+          - name: cross_street
+          - name: lat
+          - name: lon
+      - name: LA_2020_PRESENT
+        description: Raw LA crime data, 2020-Present.
+        columns:
+          - name: dr_no
+          - name: date_rptd
+          - name: date_occ
+          - name: time_occ
+          - name: area_id
+          - name: area_name
+          - name: rpt_dist_no
+          - name: part_1_2
+          - name: crm_cd
+          - name: crm_cd_desc
+          - name: mocodes
+          - name: vict_age
+          - name: vict_sex
+          - name: vict_descent
+          - name: premis_cd
+          - name: premis_desc
+          - name: weapon_used_cd
+          - name: weapon_desc
+          - name: status
+          - name: status_desc
+          - name: crm_cd_1
+          - name: crm_cd_2
+          - name: crm_cd_3
+          - name: crm_cd_4
+          - name: location
+          - name: cross_street
+          - name: lat
+          - name: lon
