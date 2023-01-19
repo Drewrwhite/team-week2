@@ -33,6 +33,7 @@ clean-targets:         # directories to be removed by `dbt clean`
 # using the `{{ config(...) }}` macro.
 models:
   shared_dbt:
+    project: team-week2
     # Config indicated by + and applies to all files under models/example/
-    example:
-      +materialized: view
+    # example:
+    #   +materialized: view
