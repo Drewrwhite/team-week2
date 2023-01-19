@@ -1,0 +1,46 @@
+version: 2
+
+sources:
+  - name: denver
+    description: Data on crimes in Denver.
+    database: team-week2
+    schema: denver
+    tables:
+      - name: den_crimes
+        description: Raw Denver crime data, 2017-2022.
+        columns:
+          - name: incident_id
+          - name: offense_id
+          - name: offense_code
+          - name: offense_code_ext
+          - name: offense_type_id
+          - name: offense_cat_id
+          - name: first_occurrence
+          - name: last_occurrence 
+          - name: reported_date
+          - name: address
+          - name: geo_x
+          - name: geo_y
+          - name: geo_lon
+          - name: geo_lat
+          - name: district_id
+          - name: precinct_id
+          - name: neighborhood_id
+          - name: is_crime
+          - name: is_traffic
+          - name: victim_count
+      - name: off_codes
+        description: Offense codes for Denver PD
+        database: team-week2
+        columns: 
+          - name: object_id 
+          - name: offense_code
+          - name: offense_code_ext 
+          - name: offense_type_id
+          - name: offense_type_name
+          - name: offense_cat_id
+          - name: offense_cat_name
+          - name: is_crime
+          - name: is_traffic
+
+
