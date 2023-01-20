@@ -10,7 +10,8 @@ final as (
     IUCR_code,
     crime_id,
     arrest, 
-    domestic
+    domestic,
+    beat
   from stg_chi_crimes
   order by year, month 
 )
