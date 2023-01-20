@@ -1,17 +1,19 @@
-with stg_premise as (
+{{ config (
+    materialized="table"
+)}}
+
+with stg_crime as (
     select * from {{ ref('stg_los_angeles') }}
-), 
+),
+
 
 final as (
     select distinct
-      premis_cd,
-      premis_desc,
+      crm_cd,
+      crm_cd_desc,
       current_timestamp as created_at,
       current_timestamp as modified_at
-    
-    from stg_premise
-    where coalesce(premis_cd, premis_desc) is not null
-
+    from stg_crime
 )
 
 select * from final
