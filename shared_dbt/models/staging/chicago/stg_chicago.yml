@@ -1,0 +1,38 @@
+version: 2
+
+models:
+  - name: stg_chi_crimes
+    description: Cast date_time to datetime, drop unneeded columns.
+    columns:
+      - name: crime_id
+      - name: date_time 
+      - name: block, 
+      - name: IUCR_code, 
+      - name: primary_IUCR, 
+      - name: secondary_IUCR,
+      - name: location_description,
+      - name: arrest, 
+      - name: domestic, 
+      - name: beat, 
+      - name: district,
+      - name: ward, 
+      - name: community_area,
+      - name: FBI_code, 
+      - name: lat, 
+      - name: lon, 
+      - name: location
+  - name: stg_geometries
+    description: CPD shapefiles, beat level.
+    columns:
+      - name: beat
+      - name: geom
+       
+       
+         
+       
+       
+       
+       
+       
+       
+       
