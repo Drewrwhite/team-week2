@@ -1,6 +1,6 @@
-with stg_month_type as (
+with agg_month_beat_type as (
 
-  select * from {{ ref('stg_month_type') }} 
+  select * from {{ ref('agg_month_beat_type') }} 
 ),
 
 dim_IUCR as (
@@ -17,12 +17,14 @@ final as (
     a.IUCR_code,
     b.primary_IUCR, 
     b.secondary_IUCR, 
-    count(crime_id) as crimes
-  from stg_month_type as a 
+    sum(total_crimes) as total_crimes,
+    sum(total_arrests) as total_arrests,
+    sum(total_domestic) as total_domestic
+  from agg_month_beat_type as a 
   inner join dim_IUCR as b
   on a.IUCR_code = b.IUCR_code
   group by year, month, IUCR_code, primary_IUCR, secondary_IUCR
-  order by year, month, crimes desc
+  order by year, month, total_crimes desc
 ) 
 
 select * from final
