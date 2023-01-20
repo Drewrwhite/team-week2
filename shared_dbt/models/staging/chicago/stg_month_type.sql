@@ -1,6 +1,6 @@
-with src_chi_crimes as (
+with stg_chi_crimes as (
 
-  select * from {{ source('chicago', 'chi_crimes') }} 
+  select * from {{ ref('stg_chi_crimes') }} 
 ),
 
 final as (
@@ -11,7 +11,7 @@ final as (
     crime_id,
     arrest, 
     domestic
-  from chicago.fct_chi_crimes 
+  from stg_chi_crimes
   order by year, month 
 )
 

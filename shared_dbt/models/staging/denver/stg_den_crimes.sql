@@ -19,6 +19,7 @@ final as (
     neighborhood_id
 
   from src_den_crimes
+  order by reported_date
 )
 
 select * from final
