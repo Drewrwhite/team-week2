@@ -10,7 +10,7 @@ with src_geometries as (
 final as (
 
   select 
-    beat_num as beat, 
+    CAST(beat_num AS INTEGER) as beat, 
     ST_GEOGFROMTEXT(geometry, make_valid => True) as geom
   from src_geometries 
 )
