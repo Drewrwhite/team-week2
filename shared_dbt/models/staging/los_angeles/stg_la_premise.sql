@@ -1,18 +1,17 @@
-with source as (
- select * from {{ source('los_angeles', 'LA_2010_2019') }}
- union all
- select * from {{ source('los_angeles', 'LA_2020_PRESENT') }}
-),
+with stg_premise as (
+    select * from {{ ref('stg_los_angeles') }}
+), 
 
-staged as (
-
-    select 
+final as (
+    select distinct
       premis_cd,
       premis_desc,
       current_timestamp as created_at,
       current_timestamp as modified_at
+    
+    from stg_premise
+    where coalesce(premis_cd, premis_desc) is not null
 
-    from source
 )
 
-select * from staged
+select * from final
