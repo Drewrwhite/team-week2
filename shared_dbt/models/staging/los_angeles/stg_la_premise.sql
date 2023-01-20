@@ -4,14 +4,18 @@ with stg_premise as (
 
 final as (
     select distinct
-      premis_cd,
-      premis_desc,
-      current_timestamp as created_at,
-      current_timestamp as modified_at
+        premis_cd,
+        premis_desc,
+        current_timestamp as created_at,
+        current_timestamp as modified_at
     
     from stg_premise
-    where coalesce(premis_cd, premis_desc) is not null
-
+    where 
+    (
+    premis_cd is not null
+    and 
+    premis_desc is not null
+)
 )
 
 select * from final
