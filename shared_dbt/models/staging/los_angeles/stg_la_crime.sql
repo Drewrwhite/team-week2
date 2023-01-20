@@ -1,7 +1,3 @@
-{{ config (
-    materialized="table"
-)}}
-
 with stg_crime as (
     select * from {{ ref('stg_los_angeles') }}
 ),
@@ -9,10 +5,10 @@ with stg_crime as (
 
 final as (
     select distinct
-      crm_cd,
-      crm_cd_desc,
-      current_timestamp as created_at,
-      current_timestamp as modified_at
+        crm_cd,
+        crm_cd_desc,
+        current_timestamp as created_at,
+        current_timestamp as modified_at
     from stg_crime
 )
 
