@@ -31,6 +31,12 @@ sources:
           - name: lat
           - name: lon
           - name: location
+      - name: geometries
+        description: Geometries of Chicago PD police beats
+        columns:
+          - name: beat_num
+          - name: district
+          - name: geometry
       # - name: orders
       #   description: Raw orders data.
       #   columns:
