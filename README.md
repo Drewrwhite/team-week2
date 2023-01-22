@@ -10,6 +10,7 @@
 ## Technologies Used
 
 * Python
+* SQL
 * BigQuery
 * DBT
 * Looker Studio
