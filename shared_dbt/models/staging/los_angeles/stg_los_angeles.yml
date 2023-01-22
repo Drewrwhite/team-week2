@@ -1,0 +1,45 @@
+version: 2
+
+models:
+  - name: stg_los_angeles
+    description: stg_los_angeles stage
+    columns:
+          - name: dr_no
+          - name: date_occ
+          - name: area_id
+          - name: area_name
+          - name: crm_cd
+          - name: crm_cd_desc
+          - name: premis_cd
+          - name: premis_desc
+          - name: location
+  - name: stg_la_areas
+    description: stg_la_areas stage
+    columns:
+          - name: area_id
+          - name: area_name
+          - name: created_at
+          - name: modified_at
+  - name: stg_la_crime
+    description: stg_la_crime stage
+    columns: 
+          - name: crm_cd
+          - name: crm_cd_desc
+          - name: created_at
+          - name: modified_at
+  - name: stg_la_premise
+    description: stg_la_premise stage
+    columns:
+          - name: premis_cd
+          - name: premis_desc
+          - name: created_at
+          - name: modified_at
+  - name: stg_la_locations
+    description: stg_la_locations stage
+    columns: 
+          - name: location_id
+          - name: location
+          - name: premis_cd
+          - name: area_id
+          - name: created_at
+          - name: modified_at
