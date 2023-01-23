@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: boston_crime
+    database: boston
+    schema: boston_crime
+    tables:
+      - name: boston_crime
