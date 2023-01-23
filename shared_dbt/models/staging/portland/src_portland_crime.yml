@@ -1,0 +1,8 @@
+version: 2 
+
+sources:
+  - name: portland_crime
+    database: team-week2
+    schema: portland
+    tables:
+      - name: portland_crime
