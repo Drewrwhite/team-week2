@@ -23,6 +23,8 @@
 * https://www.kaggle.com/datasets/onlyrohit/crimes-in-chicago
 * https://www.kaggle.com/datasets/paultimothymooney/denver-crime-data
 * https://www.kaggle.com/datasets/chaitanyakck/crime-data-from-2020-to-present
+* https://www.kaggle.com/datasets/AnalyzeBoston/crimes-in-boston
+* https://www.kaggle.com/datasets/katzwigmore/portland-oregon-crime-data
 
 </br>
 
