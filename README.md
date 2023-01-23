@@ -2,11 +2,7 @@
 
 #### By Alejandro Socarras, Drew White, Phil Kendall
 
-#### _[See Presentation](https://datastudio.google.com/reporting/d14cea99-515b-40f4-a3da-bb06626ad1ad)_
-
-####  Exploring Crime in Major US Cities
-
-##  Description
+###  _Exploring Crime in Major US Cities_
 
 This repository demonstrates the creation of basic ELT pipelines using city crime data sourced from public kaggle datasets. 
 
@@ -16,7 +12,7 @@ This repository demonstrates the creation of basic ELT pipelines using city crim
 4. Perform transformations in SQL using DBT. 
 5. Connect transformed data to dashboards in Looker Studio. 
 
-## Technologies Used
+### Technologies Used
 
 * Python
 * SQL
@@ -24,9 +20,17 @@ This repository demonstrates the creation of basic ELT pipelines using city crim
 * DBT
 * Looker Studio
   
-</br>
+### Dashboards and Visualizations 
+![chi_1](./img/chi_deceptive_practices.resized.png)
+![la_1](./img/la_topcrimes.resized.png)
+<!-- ![chi_2](./img/chi_beatmap.resized.png) ![la_2](./img/la_crimemap.resized.png) -->
+![joint_map](./img/joint_map.resized.png)
 
-## Datasets Used
+#### _[Dashboard #1 (Drew White)](https://datastudio.google.com/reporting/5dafe154-fb0b-4188-8836-9249e075aacf)_
+#### _[Dashboard #2 (Alejandro Socarras)](https://datastudio.google.com/reporting/d14cea99-515b-40f4-a3da-bb06626ad1ad)_
+
+
+### Datasets Used
 
 * https://www.kaggle.com/datasets/onlyrohit/crimes-in-chicago
 * https://www.kaggle.com/datasets/paultimothymooney/denver-crime-data
@@ -36,10 +40,7 @@ This repository demonstrates the creation of basic ELT pipelines using city crim
 
 </br>
 
-## Description
-
-
-## Setup/Installation Requirements
+### Setup/Installation Requirements
 * Make a new directory for your project
   ```bash
   mkdir <new-directory>
