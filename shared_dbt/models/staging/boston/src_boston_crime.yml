@@ -1,7 +1,7 @@
 version: 2
 
 sources:
-  - name: boston_crime
+  - name: boston
     database: team-week2
     schema: boston
     tables:
