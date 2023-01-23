@@ -5,4 +5,4 @@ SELECT
   street,
   district
 FROM 
-  {{ sources('boston','boston_crime') }}
+  {{ source('boston','boston_crime') }}
