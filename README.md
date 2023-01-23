@@ -6,7 +6,15 @@
 
 ####  Exploring Crime in Major US Cities
 
-<br>
+##  Description
+
+This repository demonstrates the creation of basic ELT pipelines using city crime data sourced from public kaggle datasets. 
+
+1. Set up a group project in Google Cloud, with service account authorizations and SDK access for multiple remote users. 
+2. Load datasets to BigQuery using Python API. 
+3. Connect Google Cloud project to shared DBT repository. 
+4. Perform transformations in SQL using DBT. 
+5. Connect transformed data to dashboards in Looker Studio. 
 
 ## Technologies Used
 
