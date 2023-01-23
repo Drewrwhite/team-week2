@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: boston
+    database: team-week2
+    schema: boston
+    tables:
+      - name: boston_crime
