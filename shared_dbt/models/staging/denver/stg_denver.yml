@@ -1,33 +1,37 @@
 version: 2
 
 models:
-  - name: stg_dim_off_codes
-    description: Staged dimension table of offense codes from denver crime dataset. 
-    columns: 
-      - name: off_id_hash
-        description: Primary Key, hash of offense_code and offense_code_ext
+  - name: stg_den_crimes
+    columns:
+      - name: reported_date
+      - name: incident_id
+        description: Primary Key
         tests:
           - unique
           - not_null
-      - name: offense_code
-      - name: offense_code_ext
-      - name: offense_type_id
-      - name: offense_type_name
-      - name: offense_cat_id
-      - name: offense_cat_name
-      - name: is_crime
-      - name: is_traffic
-  ## Abandoned this in second version of data model 
-  # - name: stg_dim_locations
-  #   description: Staged location data from denver crime dataset. 
-  #   columns: 
-  #     - name: location
-  #       tests:
-  #         - unique
-  #         - not_null
-  #     - name: address
-  #     - name: lat
-  #     - name: lon
-  #     - name: district_id
-  #     - name: precinct_id
-  #     - name: neighborhood_id 
+      - name: off_id_hash
+      - name: first_occurrence  
+      - name: last_occurrence
+      - name: address
+      - name: lon
+      - name: lat
+      - name: district_id
+      - name: precinct_id
+      - name: neighborhood_id
+  - name: stg_off_month
+    columns: 
+      - name: reported_date
+      - name: incident_id
+        description: Primary Key
+        tests:
+          - unique
+          - not_null
+      - name: off_id_hash
+      - name: first_occurrence  
+      - name: last_occurrence
+      - name: address
+      - name: lon
+      - name: lat
+      - name: district_id
+      - name: precinct_id
+      - name: neighborhood_id

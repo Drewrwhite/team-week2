@@ -7,9 +7,11 @@ final as (
 
   select
     crime_id, 
-    date_time, 
+    PARSE_DATETIME('%m/%d/%Y %T %p', date_time) as date_time, 
     block, 
     IUCR_code, 
+    primary_IUCR, 
+    secondary_IUCR,
     location_description,
     arrest, 
     domestic, 
