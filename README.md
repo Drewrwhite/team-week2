@@ -4,35 +4,52 @@
 
 ###  _Exploring Crime in Major US Cities_
 
-This repository demonstrates the creation of basic ELT pipelines using city crime data sourced from public kaggle datasets. 
+This repository demonstrates the creation of basic ELT pipelines using city crime data sourced from public kaggle datasets.
 
-1. Set up a group project in Google Cloud, with service account authorizations and SDK access for multiple remote users. 
-2. Load datasets to BigQuery using Python API. 
-3. Connect Google Cloud project to shared DBT repository. 
-4. Perform transformations in SQL using DBT. 
-5. Connect transformed data to dashboards in Looker Studio. 
+1. Set up a group project in Google Cloud, with service account authorizations and SDK access for multiple remote users.
+2. Load datasets to BigQuery using Python API.
+3. Connect Google Cloud project to shared DBT repository.
+4. Perform transformations in SQL using DBT.
+5. Connect transformed data to dashboards in Looker Studio.
 
 ### Technologies Used
 
 * Python
+* SQL
 * BigQuery
 * DBT
 * Looker Studio
-  
-### Dashboards and Visualizations 
+ 
+### Dashboards and Visualizations
 ![chi_1](./img/chi_deceptive_practices.resized.png)
 ![la_1](./img/la_topcrimes.resized.png)
-<!-- ![chi_2](./img/chi_beatmap.resized.png) ![la_2](./img/la_crimemap.resized.png) -->
 ![joint_map](./img/joint_map.resized.png)
 
 #### _[Dashboard #1 (Drew White)](https://datastudio.google.com/reporting/5dafe154-fb0b-4188-8836-9249e075aacf)_
 #### _[Dashboard #2 (Alejandro Socarras)](https://datastudio.google.com/reporting/d14cea99-515b-40f4-a3da-bb06626ad1ad)_
 
+### Data Models
+
+Boston (_Phil Kendall_)
+
+![Boston](img/boston_crime_data_model.resized.jpg)
+
+LA (_Drew White_)
+
+![LA](img/LA_CRIME_ERD.resized.png)
+
+
+Chicago/Denver (_Alejandro Socarras_)
+
+![Chicago/Denver](img/version3_ERD.resized.png)
 
 ### Datasets Used
 
 * https://www.kaggle.com/datasets/onlyrohit/crimes-in-chicago
 * https://www.kaggle.com/datasets/paultimothymooney/denver-crime-data
+* https://www.kaggle.com/datasets/chaitanyakck/crime-data-from-2020-to-present
+* https://www.kaggle.com/datasets/AnalyzeBoston/crimes-in-boston
+* https://www.kaggle.com/datasets/katzwigmore/portland-oregon-crime-data
 
 </br>
 
@@ -42,7 +59,7 @@ This repository demonstrates the creation of basic ELT pipelines using city crim
   mkdir <new-directory>
   cd <new-directory>
   ```
-* Clone the repository by inputting: 
+* Clone the repository by inputting:
   ```bash
   git clone https://github.com/apsocarras/team-week2.git
   ```
@@ -57,7 +74,7 @@ This repository demonstrates the creation of basic ELT pipelines using city crim
   ```
 * Install the necessary items with requirements.txt:
   ```bash
-    pip install -r requirements.txt
+	pip install -r requirements.txt
   ```
 * With your virtual environment now enabled with proper requirements, open the directory:
   ```bash
@@ -84,3 +101,5 @@ The above copyright notice and this permission notice shall be included in all c
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 </br>
+
+
