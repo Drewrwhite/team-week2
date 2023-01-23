@@ -1,6 +1,6 @@
 SELECT 
-  opendatalat,
-  opendatalon,
+  opendatalat as latitude,
+  opendatalon as longitude,
   address,
   neighborhood
 FROM 
